@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),  # Include the admin path
-    path("", include("blog.urls"), name="blog-urls"),  # Include the blog app URLs
+    path('admin/', admin.site.urls),
+    path('summernote/', include('django_summernote.urls')),  # Add this line
+    path('', include('blog.urls')),
 ]
