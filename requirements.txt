@@ -7,3 +7,4 @@ psycopg2==2.9.10
 sqlparse==0.5.3
 style==1.1.0
 update==0.0.1
+whitenoise==5.3.0
