@@ -13,7 +13,7 @@ TEMPLATES_DIR = BASE_DIR / "templates"
 # Quick-start development settings - unsuitable for production
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-isahudev-djangoblog-jtv4fy2xi3f.ws.codeinstitute-ide.net',
@@ -112,3 +112,8 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',  # Ensure this is included
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
