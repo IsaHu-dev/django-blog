@@ -1,8 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
-from blog import views as blog_views
 
 urlpatterns = [
-    path("", blog_views.my_blog, name='blog'),
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),  # Include the admin path
+    path("", include("blog.urls"), name="blog-urls"),  # Include the blog app URLs
 ]
