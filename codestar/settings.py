@@ -16,7 +16,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-isahudev-djangoblog-jtv4fy2xi3f.ws.codeinstitute-ide.net',
+    '8000-isahudev-djangoblog-dez9ff9pcov.ws.codeinstitute-ide.net',
      '.herokuapp.com']
 
 
